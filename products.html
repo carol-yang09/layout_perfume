@@ -1,10 +1,91 @@
----
-title: 產品頁
-layout: ./app/layout.ejs
-engine: ejs
-current: products
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>產品頁</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+  <div class="container-lg">
+    <a class="navbar-brand logo ml-8 ml-lg-0" href="index.html">D'PERFUME</a>
+    <div class="d-flex d-lg-none align-items-center">
+      <a href="#" class="mr-3 px-4 pt-2 position-relative text-secondary">
+        <span class="material-icons">
+          shopping_cart
+        </span>
+        <span class="navbar__cart-num">3</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar__toggler-icon material-icons text-secondary">menu</span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-lg-12 text-center active">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="products.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">store</span>
+            <span class="align-middle">Product</span>
+          </a>
+        </li>
+        <li class="nav-item mr-lg-12 text-center ">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="login.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">person</span>
+            <span class="align-middle">Log In</span>
+          </a>
+        </li>
+        <li class="nav-item mr-lg-12 text-center ">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="wishlist.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">favorite</span>
+            <span class="align-middle">Wishlist</span>
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block mr-lg-12 text-center ">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="cart.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">shopping_cart</span>
+            <span class="align-middle">Cart(3)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+    <nav class="d-none d-lg-block bg-primary">
+  <div class="container">
+    <ul class="d-flex align-items-center list-unstyled">
+      <li>
+        <a href="#" class="nav__link mr-11 h5">CHANEL</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link mr-11 h5">Jo Malone</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link mr-11 h5">Curology</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link mr-11 h5">Dior</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link mr-11 h5">Chloe</a>
+      </li>
+      <li>
+        <a href="#" class="nav__link h5">ZARA</a>
+      </li>  
+    </ul>
+  </div>
+</nav>
+  
+
+  
 <main class="container py-15 pt-lg-24 pb-lg-21">
   <ul class="row mb-6 mb-lg-8 list-unstyled">
     <li class="col-12 col-md-6 col-lg-4 col-xl-3 mb-11 mb-lg-20">
@@ -391,3 +472,61 @@ current: products
     </div>
   </div>
 </div>
+
+  
+    <section class="subscription d-flex align-items-end">
+  <div class="container pb-26">
+    <div class="row">
+      <div class="col-12 col-lg-5 col-xl-4" data-aos="flip-left" data-aos-duration="2000">
+        <h2 class="mb-8 text-secondary font-weight-bold">
+          記得
+          <span class="d-block">訂閱以獲取更多資訊！</span>
+        </h2>
+        <div class="input-group">
+          <input type="text" class="form-control px-6 py-7 border-primary" placeholder="Your email address">
+          <div class="input-group-append">
+            <button class="btn btn-primary px-11 py-7" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+
+  <footer class="bg-primary text-white">
+  <ul class="container d-flex align-items-center list-unstyled">
+    <li class="mr-auto mr-lg-8">
+      <a href="#" class="py-8">
+        <img src="assets/images/d’Perfumewhite.png">
+      </a>
+    </li>
+    <li class="h7">
+      © 2020. All Rights Reserved.
+    </li>
+    <ul class="d-none d-lg-flex ml-auto list-unstyled">
+      <li class="mr-14">
+        <a href="products.html" class="text-white py-9 h5">Product</a>
+      </li>
+      <li class="mr-14">
+        <a href="#" class="text-white py-9 h5">Blog</a>
+      </li>
+      <li>
+        <a href="#" class="text-white py-9 h5">Contact</a>
+      </li>        
+    </ul>
+  </ul>
+</footer>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
