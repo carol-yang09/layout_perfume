@@ -1,0 +1,31 @@
+.intro {
+  &__img {
+    min-height: 21.875rem;
+    @include bg-full(cover);
+    @include desktop-s {
+      min-height: 34.75rem;
+    }
+  }
+  &__img-lg {
+    min-height: 42.5rem;
+    @include desktop-s {
+      min-height: 67.5rem;
+    }
+  }
+  &__content {
+    @include desktop-s {
+      max-width: 21.875rem;
+    }
+  }
+  &__btn {
+    border: 2px solid $black;
+    border-radius: 1.875rem;
+    color: $black;
+    @include transition(0.25s);
+    &:hover {
+      background-color: $primary;
+      border-color: $primary;
+      color: $white;
+    }
+  }
+}

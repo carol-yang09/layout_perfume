@@ -1,0 +1,5 @@
+.subscription {
+  height: 37.5rem;
+  background-image: url("../images/index10.jpg");
+  @include bg-full(cover);
+}

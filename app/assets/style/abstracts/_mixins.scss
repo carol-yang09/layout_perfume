@@ -1,0 +1,49 @@
+$breakpoint-xs: 375px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+@mixin mobile-s {
+  @media (min-width: $breakpoint-xs) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (min-width: $breakpoint-sm) {
+    @content;
+  }
+}
+
+@mixin pad {
+  @media (min-width: $breakpoint-md) {
+    @content;
+  }
+}
+
+@mixin desktop-s {
+  @media (min-width: $breakpoint-lg) {
+    @content;
+  }
+}
+
+@mixin desktop-m {
+  @media (min-width: $breakpoint-xl) {
+    @content;
+  }
+}
+
+// bg-full
+
+@mixin bg-full($bgSize) {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: $bgSize;
+}
+
+// transition
+
+@mixin transition($time) {
+  transition: all $time ease-in-out;
+}

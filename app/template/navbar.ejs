@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-lg">
+    <a class="navbar-brand logo ml-8 ml-lg-0" href="index.html">D'PERFUME</a>
+    <div class="d-flex d-lg-none align-items-center">
+      <a href="#" class="mr-3 px-4 pt-2 position-relative text-secondary">
+        <span class="material-icons">
+          shopping_cart
+        </span>
+        <span class="navbar__cart-num">3</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar__toggler-icon material-icons text-secondary">menu</span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item mr-lg-12 text-center <% if(current == 'products' || current == 'product') { %>active<% } %>">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="products.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">store</span>
+            <span class="align-middle">Product</span>
+          </a>
+        </li>
+        <li class="nav-item mr-lg-12 text-center <% if(current == 'login') { %>active<% } %>">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="login.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">person</span>
+            <span class="align-middle">Log In</span>
+          </a>
+        </li>
+        <li class="nav-item mr-lg-12 text-center <% if(current == 'wishlist') { %>active<% } %>">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="wishlist.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">favorite</span>
+            <span class="align-middle">Wishlist</span>
+          </a>
+        </li>
+        <li class="nav-item d-none d-lg-block mr-lg-12 text-center <% if(current == 'wishlist') { %>active<% } %>">
+          <a class="navbar__link nav-link py-6 py-lg-4 h5" href="cart.html">
+            <span class="material-icons align-middle d-none d-lg-inline-block">shopping_cart</span>
+            <span class="align-middle">Cart(3)</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

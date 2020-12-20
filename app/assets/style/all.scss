@@ -1,0 +1,21 @@
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "./helpers/type";
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./abstracts/mixins";
+@import "./base/base";
+
+@import "./components/pagination";
+
+@import "./layout/navbar";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/card";
+
+
+@import "./pages/index";
